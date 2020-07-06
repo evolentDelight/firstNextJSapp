@@ -18,14 +18,7 @@ export default function Post( {postData} ) {
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
-
-      {postData.title}
-      <br />
-      {postData.id}
-      <br />
-      <Date dateString={postData.date}/>
-      <br />
-      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      
     </Layout>
   );
 }
